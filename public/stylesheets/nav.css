@@ -1,0 +1,124 @@
+.wizHeaderImg{
+	float:left;
+	height:100px;
+	margin-left:0px;
+}
+
+.wizcontainer{
+	width: 1003px;
+	height: 100px;
+	padding: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wizHeader{
+	position:absolute;
+	width: 1003px;
+	height: 100px;
+	background-image: url(../image/wiz_header_bg.jpg);
+	background-repeat: repeat-x;
+	z-index: -1;
+}
+
+.mainbody{
+	position: relative;
+	width: 1003px;
+	height: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+ul li{
+	list-style: none;
+	display: inline;
+	/*background-color: #277189;*/
+	/*background-color: #4272A6;*/
+	padding: 10px;
+	font-size: 17px;
+	text-align: center;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+li a:link,li a:visited{
+	text-decoration: none;
+	color: white;
+}
+
+li a:hover,li a:active{
+	text-decoration: none;
+	color: black;
+}
+
+
+.menu{
+	margin-top: 0px;
+	margin-bottom: 5px;
+	padding: 5px;
+	/*background-color: #4272A6;*/
+	background-color: #277189;
+}
+
+.slide{
+	width: 100%;
+	height: 250px;
+}
+
+.eventdiv{
+	float: left;
+	margin-top: 5px;
+	width: 200px;
+	height: 300px;
+}
+
+.introdiv{
+	/*float: left;*/
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 206px;
+	width: 796px;
+	height: 300px;
+}
+
+.footer{
+	position: absolute;
+	margin-top: 310px;
+	width: 100%;
+	height: 36px;
+}
+
+.footermenu{
+	position:absolute;
+	margin-top:30px;
+	margin-left:300px;
+	font-size: 13px;
+	z-index: 3;
+}
+
+
+
+#footmenu a:link,#footmenu a:visited{
+	text-decoration: none;
+	color: white;
+}
+
+#footmenu a:hover,#footmenu a:active{
+	text-decoration: underline;
+}
+
+#footmenu a{
+	padding: 5px;
+}
+
+.copyright{
+	position:absolute;
+	font-size:15px;
+	color:black;
+	margin-top:380px;
+	text-align:center;
+	margin-left:300px;
+	margin-right:300px;
+}
