@@ -9,6 +9,21 @@ var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
 
+//	Import wiz event module
+var event = require('./routes/event');
+
+//	Import wiz sponsor module
+var sponsor = require('./routes/sponsor');
+
+//	Import wiz speaker module
+var speaker = require('./routes/speaker');
+
+//	Import wiz agenda module
+var agenda = require('./routes/agenda');
+
+//	Import wiz contact module
+var contact = require('./routes/contact');
+
 var app = express();
 
 // all environments
@@ -30,6 +45,20 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/users', user.list);
+//	Set Wiz Event Page Route Info
+app.get('/event',event.index);
+
+//	Set Wiz Speaker Page Route Info
+app.get('/speaker',speaker.index);
+
+//	Set Wiz Sponsor Page Route Info
+app.get('/sponsor',sponsor.index);
+
+//	Set Wiz Agenda Page Route Info
+app.get('/agenda',agenda.index);
+
+//	Set Wiz Contact Page Route Info
+app.get('/contact',contact.index);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
