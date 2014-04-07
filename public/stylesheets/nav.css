@@ -1,33 +1,55 @@
-.wizHeaderImg{
-	float:left;
-	height:100px;
-	margin-left:0px;
-}
-
 .wizcontainer{
 	width: 1003px;
-	height: 100px;
+	height: 198px;
 	padding: 0px;
+	position:relative;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.wizHeader{
-	position:absolute;
-	width: 1003px;
-	height: 100px;
-	background-image: url(../image/wiz_header_bg.jpg);
-	background-repeat: repeat-x;
-	z-index: -1;
-}
 
 .mainbody{
 	position: relative;
 	width: 1003px;
-	height: 800px;
+	height: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
+
+#menu{
+	width:600px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	color: #e3dede;
+}
+
+#menu a {
+display: block;
+height: 23px;
+margin: 0px 1px 0px 0px;
+padding: 10px 0px 0px 0px;
+background: url(/images/img06.jpg) repeat-x left top;
+color: #e3dede;
+text-decoration: none;
+text-transform: uppercase;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+text-align: center;
+}
+
+#menu a:hover {
+color: #ffffff;
+background: url(/images/img06_hover.jpg) repeat-x left top;
+}
+
+#menu ul {
+float: left;
+margin: 0px 0px 0px 0px;
+padding: 5px 0px 0px 0px;
+list-style: none;
+}
+
 
 
 ul li{
@@ -35,90 +57,8 @@ ul li{
 	display: inline;
 	/*background-color: #277189;*/
 	/*background-color: #4272A6;*/
-	padding: 10px;
-	font-size: 17px;
+	font-size: 16px;
 	text-align: center;
-	font-weight: bold;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-
-li a:link,li a:visited{
-	text-decoration: none;
-	color: white;
-}
-
-li a:hover,li a:active{
-	text-decoration: none;
-	color: black;
-}
-
-
-.menu{
-	margin-top: 0px;
-	margin-bottom: 5px;
-	padding: 5px;
-	/*background-color: #4272A6;*/
-	background-color: #277189;
-}
-
-.slide{
-	width: 100%;
-	height: 250px;
-}
-
-.eventdiv{
-	float: left;
-	margin-top: 5px;
-	width: 200px;
-	height: 300px;
-}
-
-.introdiv{
-	/*float: left;*/
-	position: absolute;
-	margin-top: 5px;
-	margin-left: 206px;
-	width: 796px;
-	height: 300px;
-}
-
-.footer{
-	position: absolute;
-	margin-top: 310px;
-	width: 100%;
-	height: 36px;
-}
-
-.footermenu{
-	position:absolute;
-	margin-top:30px;
-	margin-left:300px;
-	font-size: 13px;
-	z-index: 3;
-}
-
-
-
-#footmenu a:link,#footmenu a:visited{
-	text-decoration: none;
-	color: white;
-}
-
-#footmenu a:hover,#footmenu a:active{
-	text-decoration: underline;
-}
-
-#footmenu a{
-	padding: 5px;
-}
-
-.copyright{
-	position:absolute;
-	font-size:15px;
-	color:black;
-	margin-top:380px;
-	text-align:center;
-	margin-left:300px;
-	margin-right:300px;
+	height:33px;
+	float:left;
 }
