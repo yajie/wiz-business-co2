@@ -24,6 +24,9 @@ var agenda = require('./routes/agenda');
 //	Import wiz contact module
 var contact = require('./routes/contact');
 
+//	Import wiz contact module
+var register = require('./routes/register');
+
 var app = express();
 
 // all environments
@@ -59,6 +62,9 @@ app.get('/agenda',agenda.index);
 
 //	Set Wiz Contact Page Route Info
 app.get('/contact',contact.index);
+
+//	Set Wiz Register Page Route Info
+app.get('/register',register.index);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
