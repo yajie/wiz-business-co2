@@ -4,7 +4,7 @@
  */
 
 var express = require('express');
-var routes = require('./routes');
+var routes = require('./routes/event');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
@@ -46,7 +46,8 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', routes.index);
+app.get('/', event.index);
+
 app.get('/users', user.list);
 //	Set Wiz Event Page Route Info
 app.get('/event',event.index);
